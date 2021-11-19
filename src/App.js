@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import ThemeContext from './contexts/themeContext';
 import MainContainer from './MainContainer';
+import Weather from './Weather';
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
           {theme === 'Blue' ? 'Switch to Red' : 'Switch to Blue'}
         </button>
         <MainContainer />
+        <hr/>
+        <Weather />
     </ThemeContext.Provider>
   );
 }
