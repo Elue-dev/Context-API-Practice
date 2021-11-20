@@ -1,38 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(255, 247, 247);
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  background-color: #333;
+  color: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.movie_list{
+  background-color: rgb(43, 41, 41);
+  color: #fff;
+  padding: 1rem .5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie_btn{
+  color: #fff;
+  padding: .4rem 1rem;
+  border: 0;
+  outline: 0;
+  border-radius: 1rem;
+}
+
+.submit{
+  background-color: rgb(7, 105, 7);
+  width: 40%;
+  margin-bottom: .4rem;
+}
+
+.clear{
+  background-color: rgb(161, 15, 15);;
+  width: 40%;
+}
+
+.delete{
+  background-color: rgb(161, 15, 15);
+}
+
+.movie_input{
+  padding: .5rem;
+  border-radius: .5rem;
+  margin-bottom: .6rem;
+}
+
+.submit_btn{
+  width: 39%;
+}
+
+.div{
+  margin-bottom: 2rem;
+}
+
+#error{
+  color: red;
 }
