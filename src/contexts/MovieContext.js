@@ -10,10 +10,19 @@ export const MovieProvider = (props) => {
     }
 
     const clearMovies = () => {
-        setMovies([])
+        if(movies.length === 0){
+            alert('No movies to clear')
+        }else{
+            setMovies([])
+        }
     }
+
     return(
-        <MovieContext.Provider value={{movies, setMovies, removeMovies, clearMovies}}>
+        <MovieContext.Provider value={{
+            movies,
+            setMovies,
+            removeMovies,
+            clearMovies}}>
             {props.children}
         </MovieContext.Provider>
     )

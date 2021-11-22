@@ -20,7 +20,7 @@ function Movies() {
                     ))}
                 </div>
             ) : (
-                <h4>No Movies </h4>
+                <h4 className='no_movie'>No Movies </h4>
             )}
         </div>
     )

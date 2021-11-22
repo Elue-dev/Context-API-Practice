@@ -9,6 +9,10 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
+input, button{
+  font-family: 'Poppins', sans-serif;
+}
+
 .nav{
   background-color: #333;
   color: #fff;
@@ -16,6 +20,10 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
+}
+
+.nav_brand, b{
+  color: rgb(0, 183, 255);
 }
 
 .movie_list{
@@ -63,6 +71,6 @@ body{
   margin-bottom: 2rem;
 }
 
-#error{
-  color: red;
+.no_movie{
+  margin-top: 2rem;
 }
